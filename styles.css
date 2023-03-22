@@ -1,0 +1,245 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: myFirstFont;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  display: flex;
+  height: 100vh;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* background-image: linear-gradient(to bottom, white, hsl(221, 100%, 96%)); */
+}
+main {
+  border-radius: 2.4rem;
+  width: 40%;
+  height: 50%;
+  background-color: white;
+  justify-content: space-between;
+  display: flex;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+/* ------------------------------------------------ */
+/* ------------------------------------------------ */
+/* Left Side of the card */
+/* ------------------------------------------------ */
+/* ------------------------------------------------ */
+.left {
+  background-image: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+  width: 50%;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2.8rem;
+}
+.text {
+  color: hsl(0, 0%, 100%);
+}
+.head {
+  padding-top: 2.4rem;
+  font-size: 1.8rem;
+  color: hsl(241, 100%, 89%);
+  font-weight: 500;
+}
+.marks {
+  border-radius: 50%;
+  background-image: linear-gradient(
+    to bottom,
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+  width: 15rem;
+  height: 15rem;
+  position: relative;
+}
+.score {
+  display: inline;
+  font-size: 4.8rem;
+  font-weight: 800;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -65%);
+}
+.maxScore {
+  display: inline;
+
+  font-size: 1.2rem;
+  text-align: center;
+  color: hsl(241, 100%, 89%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 130%);
+}
+.remark {
+  font-size: 2.4rem;
+  text-align: center;
+  padding-bottom: 1rem;
+  font-weight: 500;
+}
+.description {
+  font-size: 1.6rem;
+  letter-spacing: 0.05px;
+  text-align: center;
+  color: hsl(241, 100%, 89%);
+}
+.rem {
+  padding-bottom: 3.2rem;
+}
+
+/* ------------------------------------------------ */
+/* ------------------------------------------------ */
+/* Right Side of the card */
+/* ------------------------------------------------ */
+/* ------------------------------------------------ */
+.right {
+  padding: 2.8rem;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  gap: 3.6rem;
+  width: 50%;
+}
+.headText {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.7);
+}
+.details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.6rem;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+.card {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  gap: 1.2rem;
+  border-radius: 0.6rem;
+  height: 4rem;
+  align-items: center;
+}
+img:nth-child(1) {
+  width: 2.4rem;
+  height: 2.4rem;
+  /* margin-right: 1.6rem; */
+}
+.rightText {
+  text-align: center;
+  font-weight: 700;
+  display: inline;
+  font-size: 1.2rem;
+}
+.rightMarks {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.rightCardHead {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.rightScore {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.button {
+  /* margin-bottom: 3rem; */
+  border-radius: 2.4rem;
+  height: 4rem;
+  background-color: hsl(224, 30%, 27%);
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  border: 0px solid hsl(224, 30%, 27%);
+  transition: all;
+  transition-duration: 0.3s;
+  /* margin-bottom: */
+}
+.button:hover {
+  background-image: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+  border: 0px solid hsl(224, 30%, 27%);
+}
+.button:active {
+  background-image: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+  border: 0px solid hsl(224, 30%, 27%);
+  transform: scale(0.95);
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    display: flex;
+  }
+  main {
+    width: 50vw;
+  }
+}
+
+@media screen and (max-width: 600) {
+  body {
+    display: flex;
+  }
+  main {
+    width: 80vw;
+  }
+}
+@media screen and (max-width: 1100px) {
+  body {
+    display: inline;
+  }
+  main {
+    height: 100vh;
+    background-color: white;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 100vw;
+  }
+  .left {
+    width: 100%;
+    height: 60%;
+    border-radius: 0 0 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2.8rem;
+  }
+  .right {
+    width: 100%;
+    height: auto;
+    padding-bottom: 1.2rem;
+  }
+  .button {
+    margin-top: 2.4rem;
+    padding-bottom: 0;
+  }
+}
